@@ -9,9 +9,11 @@
             <div><input type="text" name="hello_world_input"/></div>
             <div><input type="submit" class="btn btn-primary" value="POST"></div>
         </form>
-        {% if hello_world_output %}
+        {% if hello_world_list %}
         <h1>
-            {{hello_world_output.text}}
+            {% for hello_world in hello_world_list%}
+            <h6>{{hello_world.text}}</h6>
+            {% endfor %}
         </h1>
         {% endif %}
     </div>
