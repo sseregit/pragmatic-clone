@@ -8,4 +8,4 @@ class Project(models.Model):
     created_at = models.DateField(auto_now_add=True, null=True)
 
     def __str__(self):
-        return self.title
+        return f'{self.pk} : {self.title}'
