@@ -82,3 +82,4 @@ media/
 
 Dockerfile
 nginx.conf
+docker-compose.yml
